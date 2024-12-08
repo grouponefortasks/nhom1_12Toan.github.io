@@ -1,79 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Phát Đạt - Khoa Học và Logic</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nguyễn Phát Đạt - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylecss.css">
 </head>
 <body>
-    <header class="hero-section">
-        <div class="hero-content">
-            <h1>Xin chào, tôi là Nguyễn Phát Đạt</h1>
-            <p>Người yêu thích khoa học và logic</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to the Future of Science and Innovation</h1>
+      <p>Where logic meets creativity and technology empowers ideas. Let's dive into my world!</p>
+      <a href="#about" class="cta-btn">Explore Now</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <img src="profile.jpg" alt="Profile Image" class="profile-img">
+        <div class="text">
+          <h2>About Me</h2>
+          <p>I'm Nguyễn Phát Đạt, a passionate innovator, thinker, and tech enthusiast. With a strong foundation in logic and science, I constantly explore new ways to leverage technology for a better future.</p>
+          <p>Through my work, I aim to push the boundaries of what’s possible and contribute to shaping a future that’s both intelligent and sustainable.</p>
         </div>
-    </header>
+      </div>
+    </div>
+  </section>
 
-    <section class="bio">
-        <div class="container">
-            <div class="profile">
-                <img src="tieusu.jpg" alt="Nguyễn Phát Đạt">
-            </div>
-            <div class="details">
-                <p><strong>Họ và tên:</strong> Nguyễn Phát Đạt</p>
-                <p><strong>Ngày sinh:</strong> 11/08/2007</p>
-                <p><strong>Cung hoàng đạo:</strong> Sư Tử</p>
-                <p><strong>Tính cách:</strong> Hoà đồng, có tinh thần trách nhiệm cao, đam mê khoa học và logic.</p>
-                <p><strong>Lớp và Trường:</strong> Lớp 12T Trường THPT Chuyên Bến Tre</p>
-                <p><strong>Sở thích:</strong> Cờ vua, nghiên cứu khoa học, giải quyết bài toán logic.</p>
-                <p><strong>Thành tựu:</strong> Giải nhất trong kì thi chọn HSG lớp 9.</p>
-            </div>
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Innovative Projects</h2>
+      <div class="project-cards">
+        <div class="project-card">
+          <img src="project1.jpg" alt="Project 1" class="project-img">
+          <h3>Project Title 1</h3>
+          <p>A cutting-edge project focused on solving complex challenges with innovative technology.</p>
+          <a href="#" class="project-btn">Discover</a>
         </div>
-    </section>
-
-    <section class="interests">
-        <h2>Sở thích Khoa học và Logic</h2>
-        <div class="interests-container">
-            <div class="interest-item">
-                <img src="science.jpg" alt="Science" class="interest-img">
-                <p>Nghiên cứu khoa học và thí nghiệm thú vị</p>
-            </div>
-            <div class="interest-item">
-                <img src="chess.jpg" alt="Chess" class="interest-img">
-                <p>Chơi cờ vua và giải quyết các vấn đề logic</p>
-            </div>
-            <div class="interest-item">
-                <img src="reading.jpg" alt="Reading" class="interest-img">
-                <p>Đọc sách về khoa học và công nghệ</p>
-            </div>
+        <div class="project-card">
+          <img src="project2.jpg" alt="Project 2" class="project-img">
+          <h3>Project Title 2</h3>
+          <p>Exploring the future of artificial intelligence and its impact on society and technology.</p>
+          <a href="#" class="project-btn">Discover</a>
         </div>
-    </section>
+        <div class="project-card">
+          <img src="project3.jpg" alt="Project 3" class="project-img">
+          <h3>Project Title 3</h3>
+          <p>Building sustainable solutions through tech, merging innovation with eco-friendly practices.</p>
+          <a href="#" class="project-btn">Discover</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="interactive">
-        <h2>Thử thách Logic</h2>
-        <p><strong>Bài toán:</strong> Tìm số tiếp theo trong dãy số sau: 2, 4, 8, 16, ...</p>
-        <input type="number" id="answer" placeholder="Nhập câu trả lời">
-        <button onclick="checkAnswer()">Kiểm tra</button>
-        <p id="feedback"></p>
-    </section>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-    <footer class="footer">
-        <p>© 2024 Nguyễn Phát Đạt - Tất cả các quyền được bảo lưu.</p>
-    </footer>
-
-    <script>
-        function checkAnswer() {
-            const answer = document.getElementById("answer").value;
-            const feedback = document.getElementById("feedback");
-
-            if (answer == 32) {
-                feedback.textContent = "Chính xác! Dãy số này tăng gấp đôi mỗi lần.";
-                feedback.style.color = "green";
-            } else {
-                feedback.textContent = "Sai rồi, thử lại nhé!";
-                feedback.style.color = "red";
-            }
-        }
-    </script>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Nguyễn Phát Đạt. All rights reserved.</p>
+  </footer>
 </body>
 </html>
+
