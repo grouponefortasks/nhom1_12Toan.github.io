@@ -1,51 +1,74 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <title>Giới thiệu bản thân</title>
-
+    <title>Giới thiệu bản thân - Nguyễn Phát Đạt</title>
 </head>
 
 <body>
-
     <h1>Giới thiệu bản thân</h1>
-	<img src="tieusu.jpg" alt="Sở thích" width="200" height="250">
+    <img src="tieusu.jpg" alt="Sở thích" width="200" height="250">
 
-    <p>Xin chào! Tôi là Nguyễn Phát Đạt, đây là một trang web giới thiệu về bản thân tôi.</p>
-	<p>Họ và tên: Nguyễn Phát Đạt.</P>
-	<p>Ngày sinh: 11/08/2007</P>
-	<p>Cung hoàng đạo: Sư Tử</p>
-	<p>Tính cách: hoà đồng, có tinh thần trách nhiệm cao</p>
-	<p>Lớp và Trường: Lớp 12T Trường THPT Chuyên Bến Tre</p>
-	<p> Sở thích: Cờ vua</P>
-	<p> Thành tựu: đạt giải nhất trong kì thi chọn HSG lớp 9</p>
-	
-	<!-- Chèn ảnh của bạn -->
+    <p>Xin chào! Tôi là Nguyễn Phát Đạt, một người yêu thích khoa học và các vấn đề logic. Đây là trang web giới thiệu về bản thân tôi, những sở thích và thành tựu.</p>
 
-    <img src="cờvua.png" alt="Sở thích">
- 
-	<h2>Bạn cùng lớp</h2>
+    <p>Họ và tên: Nguyễn Phát Đạt</p>
+    <p>Ngày sinh: 11/08/2007</p>
+    <p>Cung hoàng đạo: Sư Tử</p>
+    <p>Tính cách: Logic, đam mê khoa học, có tinh thần trách nhiệm cao</p>
+    <p>Lớp và Trường: Lớp 12T Trường THPT Chuyên Bến Tre</p>
+    <p>Sở thích: Cờ vua, giải quyết các vấn đề logic, nghiên cứu khoa học</p>
+    <p>Thành tựu: Đạt giải nhất trong kì thi chọn HSG lớp 9</p>
+
+    <div class="interests">
+        <h3>Sở thích khoa học và logic</h3>
+        <ul>
+            <li>Giải quyết các bài toán logic</li>
+            <li>Nghiên cứu các thí nghiệm khoa học thú vị</li>
+            <li>Đọc sách về khoa học và công nghệ</li>
+        </ul>
+    </div>
+
+    <!-- Science Interactive Section -->
+    <h2>Khám Phá Khoa Học</h2>
+    <p>Chúng ta có thể thử giải quyết một bài toán logic nhỏ ngay tại đây:</p>
+
+    <div class="math-question">
+        <p><strong>Bài toán:</strong> Tìm số tiếp theo trong dãy số sau: 2, 4, 8, 16, ...</p>
+        <input type="text" id="answer" placeholder="Nhập câu trả lời">
+        <button onclick="checkAnswer()">Kiểm tra</button>
+        <p id="feedback"></p>
+    </div>
+
+    <script>
+        function checkAnswer() {
+            const answer = document.getElementById("answer").value;
+            const feedback = document.getElementById("feedback");
+
+            if (answer == 32) {
+                feedback.textContent = "Chính xác! Dãy số này tăng gấp đôi mỗi lần.";
+                feedback.style.color = "green";
+            } else {
+                feedback.textContent = "Sai rồi, thử lại nhé!";
+                feedback.style.color = "red";
+            }
+        }
+    </script>
+
+    <h2>Bạn cùng lớp</h2>
 
     <ul>
-
-        <li><a href="https://www.facebook.com/profile.php?id=100065171022155" target="_blank">Facebook của Bạn Đăng Khôi </a></li>
-
+        <li><a href="https://www.facebook.com/profile.php?id=100065171022155" target="_blank">Facebook của Bạn Đăng Khôi</a></li>
         <li><a href="https://www.facebook.com/profile.php?id=100069902543589" target="_blank">Facebook của Bạn Đặng Phúc</a></li>
-
         <li><a href="https://www.facebook.com/nhtmnhh" target="_blank">Facebook của Bạn Nhật Minh</a></li>
-
     </ul>
-	<video width="800" height="800" controls>
-	<source src="videodat.mp4" type="video/mp4">
-	</video>
-	
+
+    <!-- Video Section -->
+    <video width="800" height="800" controls>
+        <source src="videodat.mp4" type="video/mp4">
+    </video>
 
     <p>Cảm ơn bạn đã ghé thăm!</p>
-
 </body>
 
 </html>
