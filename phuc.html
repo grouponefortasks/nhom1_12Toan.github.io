@@ -1,49 +1,59 @@
+<!DOCTYPE html>
 <html lang="en">
-	<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giới thiệu bản thân</title>
-<link rel="stylesheet" href="codeCSS.css">
-
+    <link rel="stylesheet" href="codeCSS.css">
 </head>
-
 <body>
+    <h2>Giới thiệu bản thân</h2>
+    
+    <form>
+        <img src="anhdangphuc.jpg" alt="Ảnh đại diện" width="200" height="250">
+        
+        <p>Xin chào! Tôi là <b>Trương Đặng Phúc</b>, đây là một trang web giới thiệu về bản thân tôi.</p>
+        
+        <fieldset>
+            <legend>Thông tin cá nhân</legend>
+            <p><b>Họ và tên:</b> Trương Đặng Phúc</p>
+            <p><b>Ngày sinh:</b> 11/12/2006</p>
+            <p><b>Cung hoàng đạo:</b> Nhân Mã</p>
+            <p><b>Tính cách:</b> dễ thương, đáng yêu, cute, hòa đồng, hiền lành, thánh thiện</p>
+            <p><b>Lớp và Trường:</b> Lớp 12T, Trường THPT Chuyên Bến Tre</p>
+        </fieldset>
 
-    <h1>Giới thiệu bản thân</h1>
-	<img src="anhdangphuc.jpg" alt="Sở thích" width="200" height="250">
+        <fieldset>
+            <legend>Sở thích</legend>
+            <p><b>Sưu tầm:</b> Tiền cổ</p>
+        </fieldset>
 
-    <p>Xin chào! Tôi là Trương Đặng Phúc, đây là một trang web giới thiệu về bản thân tôi.</p>
-	<p>Họ và tên: Trương Đặng Phúc.</P>
-	<p>Ngày sinh: 11/12/2006</P>
-	<p>Cung hoàng đạo: Nhân Mã</p>
-	<p>Tính cách: dễ thương đáng yêu cute hoà đồng hiền lành thánh thiện</p>
-	<p>Lớp và Trường: Lớp 12T Trường THPT Chuyên Bến Tre</p>
-	<p> Sở thích: sưu tầm tiền cổ</P>
-	<p> Thành tựu: giải ba kì thi chọn HSG cấp tỉnh</p>
-	
-	<!-- Chèn ảnh của bạn -->
+        <fieldset class="interests">
+            <legend>Đam mê</legend>
+            <h3>Những điều tôi yêu thích</h3>
+            <ul>
+                <li>Khám phá các loại tiền cổ trên khắp thế giới</li>
+                <li>Chơi guitar và hát nhạc acoustic</li>
+                <li>Đọc sách về lịch sử và văn hóa</li>
+                <li>Tham gia các cuộc thi học thuật</li>
+            </ul>
+        </fieldset>
 
-    <img src="sothichphuc.jpg" alt="Sở thích">
- 
-	<h2>Bạn cùng lớp</h2>
+        <img src="sothichphuc.jpg" alt="Ảnh sở thích" width="300">
 
-    <ul>
+        <h2>Bạn cùng lớp</h2>
+        <ul>
+            <li><a href="https://www.facebook.com/profile.php?id=100065171022155" target="_blank">Facebook của Bạn Đăng Khôi</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100071139301218&locale=vi_VN" target="_blank">Facebook của Bạn Minh Khôi</a></li>
+            <li><a href="https://www.facebook.com/nhtmnhh" target="_blank">Facebook của Bạn Nhật Minh</a></li>
+        </ul>
 
-        <li><a href="https://www.facebook.com/profile.php?id=100065171022155" target="_blank">Facebook của Bạn Đăng Khôi </a></li>
+        <video width="100%" height="400" controls>
+            <source src="videophuc.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ video.
+        </video>
 
-        <li><a href=https://www.facebook.com/profile.php?id=100071139301218&locale=vi_VN" target="_blank">Facebook của Bạn Minh Khôi</a></li>
-
-        <li><a href="https://www.facebook.com/nhtmnhh" target="_blank">Facebook của Bạn Nhật Minh</a></li>
-
-    </ul>
-	<video width="800" height="800" controls>
-	<source src="videophuc.mp4" type="video/mp4">
-	</video>
-	
-	
-
-    <p>Cảm ơn bạn đã ghé thăm!</p>
-
+        <p style="text-align: center;">Cảm ơn bạn đã ghé thăm!</p>
+    </form>
 </body>
-
 </html>
