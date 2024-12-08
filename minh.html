@@ -1,162 +1,58 @@
-<meta charset="UTF-8">
-
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
     <title>Giới thiệu bản thân</title>
-<style>
-       /* Định dạng cho toàn bộ trang */
-body {
-    font-family: 'Helvetica Neue', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, #ffefd5, #ffe4e1); /* Đổi màu nền thành màu gradient */
-    color: #333;
-}
-
-/* Định dạng cho tiêu đề chính */
-h1 {
-    text-align: center;
-    color: #4CAF50;
-    margin-top: 20px;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Định dạng cho đoạn văn */
-p {
-    margin: 20px 20px;
-    line-height: 22px;
-    font-size: 18px;
-}
-
-/*Định dạng db*/
-.hto {
-    font-size: 22px;
-}
-.pto {
-    font-size: 18px;
-}
-.pnho {
-    font-size: 5px;	
-}
-
-/*Căn*/
-.cangiua {
-	text-align: center;
-}
-	
-/*Chung dòng*/
-.inline { 
-	display: inline; 
-}
-
-/* Định dạng cho danh sách */
-ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
-
-ul li {
-    margin: 10px 0;
-}
-
-ul li a {
-    color: #2196F3;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px;
-    transition: background 0.3s, color 0.3s;
-}
-
-ul li a:hover {
-    background: #2196F3;
-    color: #fff;
-    border-radius: 5px;
-}
-
-/* Định dạng cho hình ảnh */
-img {
-    display: block;
-    margin: 20px auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 100%;
-}
-
-/* Định dạng cho video */
-video {
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 100%;
-}
-
-/* Định dạng cho tiêu đề phụ */
-h2 {
-    text-align: center;
-    color: #4CAF50;
-    margin-top: 30px;
-    font-size: 2em;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-/* Định dạng cho liên kết */
-a {
-    color: #2196F3;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: #1769aa;
-}
-
-</style>
-
+    <link rel="stylesheet" href="nhom1.css">
 </head>
-
 <body>
+    <div class="container">
+        <h1 id="home">Giới thiệu bản thân</h1>
+        <img src="anhminh.jpg" alt="Visual" width="190" height="250">
+        <p>Xin chào! Tôi là Thái Đặng Nhật Minh, đây là một trang web giới thiệu về bản thân tôi.</p>
+        
+        <div class="navigation-buttons">
+            <button onclick="document.getElementById('thong-tin').scrollIntoView();">Thông tin cá nhân</button>
+            <button onclick="document.getElementById('so-thich').scrollIntoView();">Sở thích</button>
+            <button onclick="document.getElementById('thanh-tuu').scrollIntoView();">Thành tựu</button>
+        </div>
 
-    <h1>Giới thiệu bản thân</h1>
-	<img src="anhminh.jpg" alt="Sở thích" width="190" height="250">
-
-    	<fieldset>
-            <legend> <b> <span class="hto">Thông tin cá nhân</span> </b> </legend>
+        <fieldset id="thong-tin">
+            <legend><b>Thông tin cá nhân</b></legend>
             <p><b>Họ và tên:</b> Thái Đặng Nhật Minh</p>
             <p><b>Ngày sinh:</b> 06/09/2007</p>
             <p><b>Cung hoàng đạo:</b> Xử Nữ</p>
             <p><b>Tính cách:</b> năng nổ, hoạt bát, vui vẻ, hoà đồng</p>
             <p><b>Lớp và Trường:</b> Lớp 12T, Trường THPT Chuyên Bến Tre</p>
+            <button class="arrow" onclick="document.getElementById('home').scrollIntoView();">⬅</button>
         </fieldset>
-	
-  	<fieldset>
-            <legend> <b> <span class="hto">Sở thích</span> </b> </legend>
+
+        <fieldset id="so-thich">
+            <legend><b>Sở thích</b></legend>
             <p>Tìm hiểu lịch sử mẫu quốc</p>
             <p>Nghiên cứu thần số học và xác suất</p>
             <p>Duy trì việc học mỗi ngày từ 8 giờ tối đến 20 giờ</p>
             <p>Xem phim nước ngoài mà cần vietsub</p>
+            <button class="arrow" onclick="document.getElementById('home').scrollIntoView();">⬅</button>
         </fieldset>
- 
- 	<fieldset>
-            <legend> <b> <span class="hto">Thành tựu</span> </b> </legend>
+
+        <fieldset id="thanh-tuu">
+            <legend><b>Thành tựu</b></legend>
             <p>Thành thạo nhiều ngôn ngữ trên Duolingo</p>
             <p>Chủ tịch tập đoàn K0C0TH@T</p>
-            <p><span class="pto">Giữ vị trí quan trọng trong quốc hội</span> <span class="pnho">trong mơ</span> </p>
+            <p><span class="pto">Giữ vị trí quan trọng trong quốc hội</span> <span class="pnho">trong mơ</span></p>
             <p>Kí hợp đồng hợp tác lâu dài với Y Long Ma</p>
+            <button class="arrow" onclick="document.getElementById('home').scrollIntoView();">⬅</button>
         </fieldset>
-	
-	<h2>Bạn cùng lớp</h2>
 
-    <ul>
+        <h2>Bạn cùng lớp</h2> 
+		<ul> 
+			<li><a href="https://www.facebook.com/profile.php?id=100065171022155" target="_blank">Facebook của Bạn Đăng Khôi</a></li> 
+			<li><a href="https://www.facebook.com/profile.php?id=100069902543589" target="_blank">Facebook của Bạn Đặng Phúc</a></li> 
+			<li><a href="https://www.facebook.com/profile.php?id=100071139301218&locale=vi_VN" target="_blank">Facebook của Bạn Minh Khôi</a></li> 
+		</ul>
 
-        <li><a href="https://www.facebook.com/profile.php?id=100065171022155" target="_blank">Facebook của Bạn Đăng Khôi </a></li>
-
-        <li><a href="https://www.facebook.com/profile.php?id=100069902543589" target="_blank">Facebook của Bạn Đặng Phúc</a></li>
-
-        <li><a href=https://www.facebook.com/profile.php?id=100071139301218&locale=vi_VN target="_blank">Facebook của Bạn Minh Khôi</a></li>
-
-    </ul>
+	</ul>
 	<video width="800" height="800" controls>
 	<source src="videominh.mp4" type="video/mp4">
 	</video>
@@ -164,6 +60,4 @@ a:hover {
 
     <p>Cảm ơn bạn đã ghé thăm!</p>
 
-</body>
-
-</html>
+	
