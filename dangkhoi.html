@@ -1,51 +1,74 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giới thiệu bản thân</title>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Giới thiệu bản thân</h1>
+            <p>Xin chào! Tôi là Võ Nguyễn Đăng Khôi, đây là một trang web giới thiệu về bản thân tôi.</p>
+        </div>
+    </header>
 
-    <h1>Giới thiệu bản thân</h1>
-	<img src="anhdangkhoi.jpg" alt="Sở thích" width="200" height="250">
+    <!-- Bio Section -->
+    <section class="bio">
+        <div class="container">
+            <div class="profile">
+                <img src="anhdangkhoi.jpg" alt="Võ Nguyễn Đăng Khôi">
+            </div>
+            <div class="details">
+                <p><strong>Họ và tên:</strong> Võ Nguyễn Đăng Khôi</p>
+                <p><strong>Ngày sinh:</strong> 07/07/2007</p>
+                <p><strong>Cung hoàng đạo:</strong> Cự Giải</p>
+                <p><strong>Tính cách:</strong> Vui vẻ</p>
+                <p><strong>Lớp và Trường:</strong> Lớp 12T, Trường THPT Chuyên Bến Tre</p>
+                <p><strong>Sở thích:</strong> Chơi cờ</p>
+                <p><strong>Thành tựu:</strong> Giải ba kỳ thi chọn HSG cấp tỉnh</p>
+            </div>
+        </div>
+    </section>
 
-    <p>Xin chào! Tôi là Võ Nguyễn Đăng Khôi, đây là một trang web giới thiệu về bản thân tôi.</p>
-	<p>Họ và tên: Võ Nguyễn Đăng Khôi.</P>
-	<p>Ngày sinh: 07/07/2007</P>
-	<p>Cung hoàng đạo: Cự Giải</p>
-	<p>Tính cách: vui vẻ</p>
-	<p>Lớp và Trường: Lớp 12T Trường THPT Chuyên Bến Tre</p>
-	<p> Sở thích: Chơi cờ</P>
-	<p> Thành tựu: giải ba kì thi chọn HSG cấp tỉnh</p>
-	
-	<!-- Chèn ảnh của bạn -->
+    <!-- Interests Section -->
+    <section class="interests">
+        <h2>Sở thích</h2>
+        <div class="interests-container">
+            <div class="interest-item">
+                <img src="khoiphim.jpg" alt="Sở thích: Chơi cờ">
+                <p>Chơi cờ</p>
+            </div>
+        </div>
+    </section>
 
-    <img src="khoiphim.jpg" alt="Sở thích">
- 
-	<h2>Bạn cùng lớp</h2>
+    <!-- Interactive Section -->
+    <section class="interactive">
+        <h2>Video Giới thiệu</h2>
+        <video width="800" height="450" controls>
+            <source src="videodangkhoi.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ video.
+        </video>
+    </section>
 
-    <ul>
+    <!-- Classmates Section -->
+    <section class="interactive">
+        <h2>Bạn cùng lớp</h2>
+        <ul>
+            <li><a href="https://www.facebook.com/profile.php?id=100071139301218&locale=vi_VN" target="_blank">Facebook của Bạn Minh Khôi</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100069902543589" target="_blank">Facebook của Bạn Đặng Phúc</a></li>
+            <li><a href="https://www.facebook.com/nhtmnhh" target="_blank">Facebook của Bạn Nhật Minh</a></li>
+        </ul>
+    </section>
 
-        <li><a href=https://www.facebook.com/profile.php?id=100071139301218&locale=vi_VN" target="_blank">Facebook của Bạn Minh Khôi </a></li>
-
-        <li><a href="https://www.facebook.com/profile.php?id=100069902543589" target="_blank">Facebook của Bạn Đặng Phúc</a></li>
-
-        <li><a href="https://www.facebook.com/nhtmnhh" target="_blank">Facebook của Bạn Nhật Minh</a></li>
-
-    </ul>
-	<video width="800" height="800" controls>
-	<source src="videodangkhoi.mp4" type="video/mp4">
-	</video>
-	
-
-    <p>Cảm ơn bạn đã ghé thăm!</p>
-
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Cảm ơn bạn đã ghé thăm!</p>
+    </footer>
 </body>
 
 </html>
