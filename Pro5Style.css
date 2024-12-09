@@ -1,154 +1,119 @@
-#Code des cho mấy cái profile ở đây.
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Màu nền tổng thể */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f7fc;
+    background: #f7f9fc;
     color: #333;
+    margin: 0;
 }
 
+/* Hero Section */
 header.hero-section {
-    background: linear-gradient(135deg, #4CAF50, #8BC34A);
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
     color: white;
-    padding: 80px 0;
     text-align: center;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 60px 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 header .hero-content h1 {
     font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 header .hero-content p {
     font-size: 1.5rem;
-    font-weight: 300;
 }
 
+/* Bio Section */
 section.bio {
     display: flex;
     justify-content: center;
-    padding: 40px 20px;
-    background-color: #ffffff;
+    padding: 50px 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 
-section.bio .container {
+.bio .container {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-section.bio .profile img {
-    border-radius: 10px;
+.bio .profile img {
+    border-radius: 15px;
     max-width: 200px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-section.bio .details {
-    margin-left: 40px;
-    font-size: 1.1rem;
+.bio .details {
+    margin-left: 30px;
 }
 
-section.bio .details p {
-    margin-bottom: 10px;
+fieldset {
+    border: 2px solid #ff758c;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Interests Section */
 section.interests {
-    background-color: #2196F3;
+    background: linear-gradient(135deg, #57c1eb, #246fa8);
     color: white;
-    padding: 60px 20px;
     text-align: center;
-}
-
-section.interests h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+    padding: 60px 20px;
 }
 
 .interests-container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.interest-item {
-    width: 30%;
-    margin-bottom: 30px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .interest-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    max-width: 300px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
 
+.interest-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Video Section */
 section.interactive {
-    padding: 50px 20px;
+    padding: 40px 20px;
     text-align: center;
-    background-color: #f4f7fc;
+    background: #f7f9fc;
 }
 
-section.interactive h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-section.interactive input {
-    padding: 10px;
-    margin-top: 10px;
-    width: 50%;
-    border-radius: 5px;
-    border: 2px solid #4CAF50;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-section.interactive button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s;
-}
-
-section.interactive button:hover {
-    background-color: #45a049;
-}
-
+/* Footer */
 footer.footer {
-    background-color: #2196F3;
+    background: #246fa8;
     color: white;
-    text-align: center;
     padding: 20px 0;
-    margin-top: 50px;
+    text-align: center;
 }
 
-footer.footer p {
-    font-size: 1rem;
-}
-
+/* Responsive */
 @media (max-width: 768px) {
     section.bio .container {
         flex-direction: column;
         align-items: center;
     }
 
-    section.bio .profile {
-        margin-bottom: 20px;
+    section.bio .details {
+        margin-left: 0;
+        text-align: center;
     }
 
     .interests-container {
         flex-direction: column;
-        align-items: center;
     }
+}
 
     .interest-item {
         width: 80%;
