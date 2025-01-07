@@ -1,148 +1,151 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kỳ Đàn Bến Tre</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #1e3a8a;
-      color: white;
-    }
-    header {
-      background-color: #facc15;
-      color: #1e3a8a;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #2563eb;
-      padding: 10px 0;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      font-size: 1.1em;
-    }
-    nav a:hover {
-      color: #facc15;
-    }
-    .hero {
-      background-image: url('chess-board.jpg'); /* Replace with your image URL */
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
-    .hero h2, .hero p {
-      color: black;
-      background: rgba(255, 255, 255, 0.7);
-      padding: 10px 20px;
-      border-radius: 10px;
-      display: inline-block;
-    }
-    .buttons a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #facc15;
-      color: #1e3a8a;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    .buttons a:hover {
-      background-color: #eab308;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-    section h3 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #facc15;
-    }
-    .about div, .events div {
-      background: #2563eb;
-      color: white;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    footer {
-      background-color: #2563eb;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 20px;
-    }
-    footer a {
-      color: #facc15;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KyDaBenTre</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            color: #f4d03f;
+        }
+        .hero {
+            background-image: url('chess-board.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h2 {
+            font-size: 2em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .section h3 {
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        .about, .events {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .about div, .events div {
+            flex: 1 1 calc(50% - 20px);
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .buttons a:hover {
+            background-color: #f4d03f;
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Kỳ Đàn Bến Tre</h1>
-  </header>
-  <nav>
-    <a href="lienket.html">Thành viên</a>
-    <a href="#events">Cờ thế</a>
-  </nav>
-  <div class="hero">
-    <h2>Xuất kỳ thiên tài</h2>
-    <p>Gia nhập vào kỳ đàn để trao đổi, nghiên cứu và học hỏi các đạo hữu!</p>
-    <div class="buttons">
-      <a href="formdangky.html">Đăng ký</a>
+    <header>
+        <h1>Kỳ Đàn Bến Tre</h1>
+    </header>
+    <nav>
+        <a href="lienket.html">Thành viên</a>
+        <a href="#events">Cờ thế</a>
+    </nav>
+    <div class="hero">
+        <h2 style="color:black">Xuất kỳ thiên tài</h2>
+        <p style="color:black">Gia nhập vào kỳ đàn để trao đổi, ngâm cứu và thỉnh giáo các đạo hữu!</p>
+        <div class="buttons">
+            <a href="formdangky.html">Đăng ký</a>
+        </div>
     </div>
-  </div>
-  <section id="about">
-    <h3>Giới thiệu</h3>
+    <section id="about" class="section about">
+        <div>
+            <p>Kỳ đàn chào đón mọi kỳ thủ bất kể trình độ, kinh nghiệm từ nhập môn đến đại cao thủ. Đích đến cuối cùng là tạo môi trường để môn phái phát triển.</p>
+        </div>
+        <div>
+            <p>Chúng tôi tin rằng cờ  không chỉ là một trò chơi—nó là một công cụ giúp rèn luyện trí óc và xây dựng cộng đồng. Hãy tham gia cùng chúng tôi để kết nối với những người đam mê cờ  và nâng cao kỹ năng của bạn.</p>
+        </div>
+    </section>
+    <section id="events" class="section events">
+       <h3>CỜ THẾ CHÍNH QUY</h3>
     <div>
-      <p>Kỳ đàn chào đón mọi kỳ thủ bất kể trình độ, từ nhập môn đến đại cao thủ, tạo môi trường để môn phái phát triển.</p>
+      <a href="bai6.html">Thế 7</a>
+      <a href="https://docs.google.com/document/d/1a5HwR5wkxYC87LpJIglKI5t2QeRQoOnpOIAdAWNRhjg/edit?tab=t.0">Thế 8</a>
+      <a href="https://docs.google.com/document/d/1N0sAm4n68OvOXy8dOhr6QF-T54qeYF_-Q8UJVSj-qbI/edit?tab=t.0">Thế 9</a>
+      <a href="https://docs.google.com/document/d/1xKk77UgnWE1ZzcHDpyrijE7azgbZrbudjHFe4h-Vh3o/edit?tab=t.0">Thế 10</a>
+      <a href="https://docs.google.com/document/d/1f0szQMLKX0mqPgCWDrOHppyQqLAah6uZYRMrThaQE8g/edit?tab=t.0">Thế 11</a>
+      <a href="https://docs.google.com/document/d/1_Xbqd03NGJ8cvA8Tld_tAzVtOYd-N_r0cGyQtpAoiHE/edit?tab=t.0">Thế 12</a>
+      <a href="https://docs.google.com/document/d/1X46cNZiVMP8VZfWCw6sPwn5lP5x_eH0g-ISkgGJSqs0/edit?tab=t.0">Thế 13</a>
+      <a href="https://docs.google.com/document/d/1Uct2BgRh4LfGlouYXz3dPduyvUvKDbpSSnMgaSE2pYY/edit?tab=t.0">Thế 14</a>
+      <a href="https://docs.google.com/document/d/1-0JgdODL35tx9Uvsy8fEiW3HfwYI7PJ2CWanqg2OLZ0/edit?tab=t.0">Thế 15</a>
+      <a href="https://docs.google.com/document/d/1gAOYh0N4peKsBVtDvukbHvOBKsx2xxpvfg-030HN918/edit?tab=t.0">Thế 16</a>
+      <a href="https://docs.google.com/document/d/1HjtU1O1fZa0aBrfwfCXzXeacdhqxJe5ypc_FqKB57m0/edit?tab=t.0">Thế 17</a>
     </div>
-    <div>
-      <p>Chúng tôi tin rằng cờ không chỉ là trò chơi mà còn là công cụ giúp rèn luyện trí óc và xây dựng cộng đồng.</p>
-    </div>
-  </section>
-  <section id="events">
-    <h3>CỜ THẾ CHÍNH QUY</h3>
-    <div>
-      <a style="color:white;" href="bai6.html">Thế 7</a>
-      <a style="color:white;" href="https://docs.google.com/document/d/1a5HwR5wkxYC87LpJIglKI5t2QeRQoOnpOIAdAWNRhjg/edit?tab=t.0">Thế 8</a>
-      <a style="color:white;" href="https://docs.google.com/document/d/1N0sAm4n68OvOXy8dOhr6QF-T54qeYF_-Q8UJVSj-qbI/edit?tab=t.0">Thế 9</a>
-      <a style="color:white;" href="https://docs.google.com/document/d/1xKk77UgnWE1ZzcHDpyrijE7azgbZrbudjHFe4h-Vh3o/edit?tab=t.0">Thế 10</a>
-      <a style="color:white;" href="https://docs.google.com/document/d/1f0szQMLKX0mqPgCWDrOHppyQqLAah6uZYRMrThaQE8g/edit?tab=t.0">Thế 11</a>
-      <a style="color:white;" href="https://docs.google.com/document/d/1_Xbqd03NGJ8cvA8Tld_tAzVtOYd-N_r0cGyQtpAoiHE/edit?tab=t.0">Thế 12</a>
-      <a style="color:white;" href="https://docs.google.com/document/d/1X46cNZiVMP8VZfWCw6sPwn5lP5x_eH0g-ISkgGJSqs0/edit?tab=t.0">Thế 13</a>
-      <a style="color:white;" href="https://docs.google.com/document/d/1Uct2BgRh4LfGlouYXz3dPduyvUvKDbpSSnMgaSE2pYY/edit?tab=t.0">Thế 14</a>
-      <a style="color:white;" href="https://docs.google.com/document/d/1-0JgdODL35tx9Uvsy8fEiW3HfwYI7PJ2CWanqg2OLZ0/edit?tab=t.0">Thế 15</a>
-      <a style="color:white;" href="https://docs.google.com/document/d/1gAOYh0N4peKsBVtDvukbHvOBKsx2xxpvfg-030HN918/edit?tab=t.0">Thế 16</a>
-      <a style="color:white;" href="https://docs.google.com/document/d/1HjtU1O1fZa0aBrfwfCXzXeacdhqxJe5ypc_FqKB57m0/edit?tab=t.0">Thế 17</a>
-    </div>
-  </section>
-  <footer>
-    <p>Học sinh lớp 12T, <a href="https://thptchuyenbentre.edu.vn/">Trường THPT Chuyên Bến Tre</a></p>
-  </footer>
+    </section>
+    <footer>
+        <p>&copy; 2025 Chess Club. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
 
